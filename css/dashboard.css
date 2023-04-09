@@ -156,7 +156,9 @@ nav img{
     top: 25%;
     border-radius: 100%;
 }
-
+.buttonwriting{
+    color: #ED7458;
+}
 button{
     background-color: #8E7C68;
     width: 100%;
