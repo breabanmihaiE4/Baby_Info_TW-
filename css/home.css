@@ -1,0 +1,252 @@
+body{
+    background-color: #DDC9BC;
+}
+/* nav */
+nav{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background: #8E7C68;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    width: 100%;
+    line-height: 300%;
+    text-align: center;
+    font-size: 125%;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+nav ul li a:hover{
+    color: #FFFFFF;
+    background: #C4B3A0;
+}
+nav img{
+    position: absolute;
+    width: 55%;
+    height: 15%;
+    top: 5%;
+    left: 23%;
+}
+.nav-menu{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 35%;
+}
+.here{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+.nav-username{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 19%;
+    text-align: center;
+    font-size: 125%;
+    color: #FFFFFF;
+}
+
+
+/* profile page */
+.page{
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    top: 0%;
+    background: #DDC9BC;
+}
+.profile{
+    position: absolute;
+    width: 22%;
+    height: 8%;
+    left: 39%;
+    top: 5%;
+
+    background: #FFDC9F;
+    box-shadow: 2px 3px 14px 4px rgba(76, 88, 109, 0.75);
+    border-radius: 100px;
+}
+.profile > h1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+    text-align: center;
+    color: #ED7458; 
+}
+.home > h1{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+.home > h3{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    inline-size: 70%;
+    overflow-wrap: break-word;
+}
+.home > h4{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    inline-size: 70%;
+    overflow-wrap: break-word;
+}
+.buton{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    left: 30%;
+    top: 50%;
+    text-align: center;
+}
+.buton > button{
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #8E7C68;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.home{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 20%;
+    top: 15%;
+    background: #FFDC9F;
+    border-radius: 100px;
+}
+    .bain{
+        text-align: center;
+    }
+    .info{
+        text-align: center;
+    }
+    .scop{
+        text-align: center;
+    }
+
+
+/* profile page */
+
+/* to do */
+@media screen and (max-width: 900px) {
+    body {
+        background-color: #DDC9BC;
+        margin: 0; 
+      }
+    .nav-username{
+        display: none;
+    }
+      
+      nav {
+        position: fixed;
+        width: 100%;
+        height: 10%; 
+        top: 0;
+        left: 0;
+        background: #8E7C68;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        z-index: 1;
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: -2%;
+        display: flex; 
+        bottom: 10%;
+      }
+      
+      nav ul li {
+        line-height: 60px; /* Change line-height to match the height of the menu */
+        margin: 0 20px; /* Add some margin to the menu items for spacing */
+      }
+      
+      nav ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+
+      }
+      
+      nav ul li a:hover {
+        color: #FFFFFF;
+        background: #C4B3A0;
+      }
+
+        nav img{
+        width: 0%;
+        height: 0%;
+        }
+    .nav-menu{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 35%;
+    }
+    .here{
+        color: black;
+        background-color: rgba(0, 0, 0, 0.250);
+    }
+
+    .buton{
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        left: 25%;
+        top: 65%;
+        text-align: center;
+    }
+    .home > h4 {
+    position: absolute;
+    top: 35%;
+    inline-size: 70%;
+    text-align: center;
+    left: 15%;
+    }
+    .home > h1 {
+    position: absolute;
+    left: 12.5%;
+    top: 5%;
+    text-align: center;
+}
+    .home > h3 {
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        left: 15%;
+        inline-size: 70%;
+        overflow-wrap: break-word;
+    }
+    .bain{
+        text-align: center;
+    }
+    .info{
+        text-align: center;
+    }
+    .scop{
+        text-align: center;
+    }
+}
