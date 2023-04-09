@@ -1,0 +1,422 @@
+body{
+    background-color: #DDC9BC;
+}
+/* nav */
+nav{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background: #8E7C68;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    width: 100%;
+    line-height: 300%;
+    text-align: center;
+    font-size: 125%;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+nav ul li a:hover{
+    color: #FFFFFF;
+    background: #C4B3A0;
+}
+nav img{
+    position: absolute;
+    width: 55%;
+    height: 15%;
+    top: 5%;
+    left: 23%;
+}
+.nav-menu{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 35%;
+}
+.here{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+.nav-username{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 19%;
+    text-align: center;
+    font-size: 125%;
+    color: #FFFFFF;
+}
+
+
+/* feed page */
+.page{
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    top: 0%;
+    background: #DDC9BC;
+}
+.dashboardpage{
+    position: absolute;
+    width: 22%;
+    height: 8%;
+    left: 39%;
+    top: 5%;
+
+    background: #FFDC9F;
+    box-shadow: 2px 3px 14px 4px rgba(76, 88, 109, 0.75);
+    border-radius: 100px;
+}
+.dashboardpage > h2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+    text-align: center;
+    color: #ED7458; 
+}
+.copil1{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    left: 10%;
+    top: 25%;
+    background: #FFDC9F;
+    border-radius: 50px;
+}
+.copil2{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    left: 10%;
+    top: 70%;
+    background: #FFDC9F;
+    border-radius: 50px;
+}
+.child-name{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+    border: solid 2px #ED7458;
+}
+.child-name > p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+    color: #ED7458;
+}
+.add{
+    position: relative;
+    width: 10%;
+    height: 13%;
+    left: 45%;
+    top: 15%;
+    bottom: 0%;
+    text-align: center;
+}
+.edit{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 20%;
+    bottom: 10%;
+    text-align: center;
+}
+.delete{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 70%;
+    bottom: 10%;
+    text-align: center;
+}
+.childprofilepic{
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    left: 8%;
+    top: 25%;
+    border-radius: 100%;
+}
+
+button{
+    background-color: #8E7C68;
+    width: 100%;
+}
+button > p{
+    position: relative;
+    font-size: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #ED7458;
+    background-color: #8E7C68;
+}
+.tabel{
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    left: 37%;
+    top: 40%;
+    background: #FFDC9F;
+    border-radius: 50px;
+}
+table{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.heads{
+    position: relative;
+    background: #ED7458;
+}
+.inserts{
+    position: relative;
+    color: #ED7458;
+}
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+}
+th {
+    background-color: black;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: black;
+}
+
+/* feed page */
+
+
+/* to do */
+@media screen and (max-width: 900px) {
+    body {
+        background-color: #DDC9BC;
+        margin: 0; 
+      }
+    .nav-username{
+        display: none;
+    }
+      
+      nav {
+        position: fixed;
+        width: 100%;
+        height: 10%; 
+        top: 0;
+        left: 0;
+        background: #8E7C68;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        z-index: 1;
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: -2%;
+        display: flex; 
+        bottom: 10%;
+      }
+      
+      nav ul li {
+        line-height: 60px; /* Change line-height to match the height of the menu */
+        margin: 0 20px; /* Add some margin to the menu items for spacing */
+      }
+      
+      nav ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+
+      }
+      
+      nav ul li a:hover {
+        color: #FFFFFF;
+        background: #C4B3A0;
+      }
+
+        nav img{
+        width: 0%;
+        height: 0%;
+        }
+    .nav-menu{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 35%;
+    }
+    .here{
+        color: black;
+        background-color: rgba(0, 0, 0, 0.250);
+    }
+    .page{
+        width: 100%;
+        left: 0%;
+        top: 6%;
+    }
+    .dashboardpage{
+        position: absolute;
+        width: 60%;
+        height: 8%;
+        left: 20%;
+        top: 5%;
+        background: #FFDC9F;
+        box-shadow: 2px 3px 14px 4px rgb(76 88 109 / 75%);
+        border-radius: 100px;
+    }
+    .dashboardpage > h2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-size: 175%;
+        text-align: center;
+        color: #ED7458;
+    }
+    .copil1{
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        top: 25%;
+        background: #FFDC9F;
+        border-radius: 50px;
+    }
+    .child-name{
+        position: absolute;
+        width: 40%;
+        height: 20%;
+        left: 30%;
+        border: solid 2px #ED7458;
+    }
+    .child-name > p{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-size: 150%;
+        text-align: center;
+        font-weight: bold;
+        color: #ED7458;
+    }
+    .tabel{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        left: 0%;
+        top: 30%;
+        background: #FFDC9F;
+        border-radius: 50px;
+    }
+    table{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+        border-collapse: collapse;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+    .heads{
+        position: relative;
+        background: #ED7458;
+    }
+    .inserts{
+        position: relative;
+        color: #ED7458;
+    }
+    th, td {
+        border: 2px solid black;
+        padding: 8px;
+    }
+    th {
+        background-color: black;
+        font-weight: bold;
+    }
+    tr:nth-child(even) {
+        background-color: black;
+    }
+    .edit{
+        position: absolute;
+        width: 30%;
+        height: 10%;
+        left: 20%;
+        bottom: 10%;
+    }
+    .delete{
+        position: absolute;
+        width: 30%;
+        height: 10%;
+        left: 50%;
+        bottom: 10%;
+        text-align: center;
+    }
+    .childprofilepic{
+       display: none;
+    }
+    .button{
+        border-radius: 20px;
+        color: #fff;
+        margin-top: 18px;
+        padding: 10px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+    }
+    .add {
+        position: relative;
+        width: 30%;
+        height: 15%;
+        left: 35%;
+        top: 13%;
+        bottom: 0%;
+        text-align: center;
+    }
+    .edit {
+        position: absolute;
+        width: 30%;
+        height: 10%;
+        left: 15%;
+        bottom: 16%;
+        text-align: center;
+    }
+    .delete {
+        position: absolute;
+        width: 30%;
+        height: 10%;
+        left: 55%;
+        bottom: 16%;
+        text-align: center;
+    }
+    button{
+        width: 100%;
+        background-color: #8E7C68;
+    }
+    
+
+}
+
+    
