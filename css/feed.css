@@ -1,0 +1,366 @@
+body{
+    background-color: #DDC9BC;
+}
+/* nav */
+nav{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background: #8E7C68;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    width: 100%;
+    line-height: 300%;
+    text-align: center;
+    font-size: 125%;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+nav ul li a:hover{
+    color: #FFFFFF;
+    background: #C4B3A0;
+}
+nav img{
+    position: absolute;
+    width: 55%;
+    height: 15%;
+    top: 5%;
+    left: 23%;
+}
+.nav-menu{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 35%;
+}
+.here{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+.nav-username{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 19%;
+    text-align: center;
+    font-size: 125%;
+    color: #FFFFFF;
+}
+
+
+/* feed page */
+.page{
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    top: 0%;
+    background: #DDC9BC;
+}
+.feedpage{
+    position: absolute;
+    width: 22%;
+    height: 8%;
+    left: 39%;
+    top: 5%;
+
+    background: #FFDC9F;
+    box-shadow: 2px 3px 14px 4px rgba(76, 88, 109, 0.75);
+    border-radius: 100px;
+}
+.feedpage > h1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+    text-align: center;
+    color: #ED7458; 
+}
+.post{
+    position: absolute;
+    width: 45%;
+    height: 65%;
+    left: 27.5%;
+    top: 20%;
+
+    background: #FFDC9F;
+    border-radius: 50px;
+}
+.username-post{
+    position: absolute;
+    width: 35%;
+    height: 10%;
+    left: 5%;
+    top: 10%;
+
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.description{
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    left: 5%;
+    top: 25%;
+
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+.comms1{
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    left: 5%;
+    top: 70%;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.user-comm{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 10%;
+    top: 10%;
+}
+.comm{
+    position: absolute;
+    width: 64%;
+    height: 100%;
+    left: 31%;
+    top: 10%;
+}
+.comms2{
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    left: 5%;
+    top: 85%;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.user-comm > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -25%;
+    top: 10%;
+    text-decoration: underline;
+    color: #ED7458;
+    font-size: 100%;
+    text-align: center;
+}
+
+img{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 47%;
+    top: 14%;
+}
+.username-post > p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    text-align: center;
+    color: #ED7458; 
+}
+.description > p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    text-align: center;
+    color: #ED7458; 
+}
+.user-comm > p{
+    position: absolute;
+    font-size: 100%;
+    text-align: center;
+    color: #ED7458; 
+
+}
+.comm p{
+    position: absolute;
+    font-size: 100%;
+    text-align: center;
+    color: #ED7458; 
+}
+.add-post{
+    position: fixed;
+    width: 5%;
+    height: 5%;
+    left: 90%;
+    bottom: 5%;
+    text-align: center;
+}
+.add-post > button{
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #8E7C68;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.post2{
+    position: absolute;
+    width: 45%;
+    height: 65%;
+    left: 27.5%;
+    top: 90%;
+    bottom: 5%;
+
+    background: #FFDC9F;
+    border-radius: 50px;
+}
+
+/* feed page */
+
+
+/* to do */
+@media screen and (max-width: 900px) {
+    body {
+        background-color: #DDC9BC;
+        margin: 0; 
+      }
+    .nav-username{
+        display: none;
+    }
+      
+      nav {
+        position: fixed;
+        width: 100%;
+        height: 10%; 
+        top: 0;
+        left: 0;
+        background: #8E7C68;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        z-index: 1;
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: -2%;
+        display: flex; 
+        bottom: 10%;
+      }
+      
+      nav ul li {
+        line-height: 60px; /* Change line-height to match the height of the menu */
+        margin: 0 20px; /* Add some margin to the menu items for spacing */
+      }
+      
+      nav ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+
+      }
+      
+      nav ul li a:hover {
+        color: #FFFFFF;
+        background: #C4B3A0;
+      }
+
+        nav img{
+        width: 0%;
+        height: 0%;
+        }
+    .nav-menu{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 35%;
+    }
+    .here{
+        color: black;
+        background-color: rgba(0, 0, 0, 0.250);
+    }
+    .page{
+        width: 100%;
+        left: 0%;
+        top: 6%;
+    }
+    .feedpage{
+        width: 40%;
+        left: 30%;
+    }
+    .feedpage > h1{
+        width: 100%;
+        height: 100%;
+        font-size: 175%;
+        text-align: center;
+        color: #ED7458; 
+    }
+    .post{
+        width: 80%;
+        left: 10%;
+    }
+    img{
+        position: absolute;
+        width: 65%;
+        height: 30%;
+        left: 17.5%;
+        top: 18%;
+    }
+    .post2{
+        width: 80%;
+        left: 10%;
+    }
+    .username-post{
+        width: 80%;
+        left: 10%;
+        top: 5%;
+    }
+    .description{
+        position: absolute;
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 51%;
+        background: #FFFFFF;
+        border-radius: 50px;
+    }
+    .comms1{
+        width: 80%;
+        left: 10%;
+    }
+    .comms2{
+        width: 80%;
+        left: 10%;
+    }
+    .user-comm{
+        width: 30%;
+        left: 10%;
+    }
+    .comm{
+        width: 50%;
+        left: 40%;
+    }
+    .add-post{
+        width: 10%;
+        height: 10%;
+        left: 90%;
+        bottom: 5%;
+    }
+   
+}
