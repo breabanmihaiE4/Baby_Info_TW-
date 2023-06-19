@@ -32,13 +32,6 @@ nav ul li a:hover{
     color: #FFFFFF;
     background: #C4B3A0;
 }
-nav img{
-    position: absolute;
-    width: 55%;
-    height: 15%;
-    top: 5%;
-    left: 23%;
-}
 .nav-menu{
     position: absolute;
     width: 100%;
@@ -57,6 +50,28 @@ nav img{
     text-align: center;
     font-size: 125%;
     color: #FFFFFF;
+}
+.nav-logo {
+    position: relative;
+    width: 170px; 
+    height: 170px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+  
+.nav-logo img {
+    max-width: 100%; 
+    max-height: 100%;
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -86,119 +101,169 @@ nav img{
     height: 100%;
     font-size: 200%;
     text-align: center;
-    color: #ED7458; 
+    color: #ED7458;
+    margin-top: 3%;  
 }
-.post{
-    position: absolute;
-    width: 45%;
-    height: 65%;
-    left: 27.5%;
-    top: 20%;
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container > div{
+    width: 50%;
+    height: 600px;
+    margin-left: 27.5%;
+    margin-top: 15%;
+    margin-bottom: 35%;
     background: #FFDC9F;
     border-radius: 50px;
 }
+
 .username-post{
-    position: absolute;
     width: 35%;
-    height: 10%;
-    left: 5%;
-    top: 10%;
-
-    background: #FFFFFF;
+    height: 6%;
+    margin-top: 5%;
+    margin-left: 32.5%;
+    background: white;
     border-radius: 50px;
-}
-.description{
-    position: absolute;
-    width: 35%;
-    height: 40%;
-    left: 5%;
-    top: 25%;
-
-    background: #FFFFFF;
-    border-radius: 50px;
-}
-
-.comms1{
-    position: absolute;
-    width: 90%;
-    height: 10%;
-    left: 5%;
-    top: 70%;
-    background: #FFFFFF;
-    border-radius: 50px;
-}
-.user-comm{
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    left: 10%;
-    top: 10%;
-}
-.comm{
-    position: absolute;
-    width: 64%;
-    height: 100%;
-    left: 31%;
-    top: 10%;
-}
-.comms2{
-    position: absolute;
-    width: 90%;
-    height: 10%;
-    left: 5%;
-    top: 85%;
-    background: #FFFFFF;
-    border-radius: 50px;
-}
-.user-comm > a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -25%;
-    top: 10%;
-    text-decoration: underline;
-    color: #ED7458;
-    font-size: 100%;
-    text-align: center;
-}
-
-img{
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    left: 47%;
-    top: 14%;
 }
 .username-post > p{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Inter';
+    font-style: normal;
     font-size: 150%;
+    line-height: 50px;
     text-align: center;
-    color: #ED7458; 
+    color: #ED7458;
+}
+
+.mediashared{
+    width: 75%;
+    height: 50%;
+    margin-left: 12.5%;
+    margin-top: 3%;
+    background: #805A5A;
+    border-radius: 12px;
+}
+.mediashared > img > video{
+    width: 96%;
+    height: 96%;
+    padding-top: 1%;
+    padding-left: 2%;
+    border-radius: 12px;
+}
+.imag{
+    width: 96%;
+    height: 96%;
+    padding-top: 1%;
+    padding-left: 2%;
+    border-radius: 12px;
+}
+video{
+    width: 96%;
+    height: 96%;
+    padding-top: 1%;
+    padding-left: 2%;
+    border-radius: 12px;
+}
+
+.description{
+    width: 90%;
+    height: 6%;
+    margin-left: 5%;
+    margin-top: 2%;
+    background: white;
+    border-radius: 30px;
+    color: #ED7458;
 }
 .description > p{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Inter';
+    font-style: normal;
     font-size: 150%;
+    line-height: 44px;
     text-align: center;
-    color: #ED7458; 
 }
-.user-comm > p{
-    position: absolute;
-    font-size: 100%;
-    text-align: center;
-    color: #ED7458; 
 
+.buttons {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
 }
-.comm p{
-    position: absolute;
-    font-size: 100%;
-    text-align: center;
-    color: #ED7458; 
+
+.buttons > button {
+    border-radius: 20px;
+    color: #fff;
+    width: 80%;
+    height: 40px;
+    margin: 5% 0;
+    background-color: #8E7C68;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
 }
+
+.buttons > p {
+    margin: 0;
+}
+
+.add-post > button {
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #8E7C68;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex; /* Utilizează flexbox */
+    justify-content: space-between; /* Plasează elementele la capetele containerului */
+    gap: 0%; /* Adaugă un spațiu de 8px între butoane */
+  }
+  
+  /* Stilizare form */
+  form {
+        margin-top: -50%;
+        margin-left: 80%;
+  }
+  
+
+.like-button {
+    background-color: #4CAF50; /* culoarea de fundal */
+    color: white; /* culoarea textului */
+    border: none; /* eliminarea marginilor */
+    padding: 8px 16px; /* dimensiuni pentru a se potrivi cu stilul */
+    cursor: pointer; /* indicator de cursor la interacțiune */
+    border-radius: 4px; /* un aspect rotunjit */
+}
+  
+.dislike-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+/* add post */
+
 .add-post{
     position: fixed;
     width: 5%;
@@ -218,23 +283,12 @@ img{
     cursor: pointer;
 }
 
-.post2{
-    position: absolute;
-    width: 45%;
-    height: 65%;
-    left: 27.5%;
-    top: 90%;
-    bottom: 5%;
-
-    background: #FFDC9F;
-    border-radius: 50px;
-}
 
 /* feed page */
 
 
 /* to do */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     body {
         background-color: #DDC9BC;
         margin: 0; 
@@ -246,7 +300,7 @@ img{
       nav {
         position: fixed;
         width: 100%;
-        height: 10%; 
+        height: 9%; 
         top: 0;
         left: 0;
         background: #8E7C68;
@@ -262,6 +316,7 @@ img{
         margin: -2%;
         display: flex; 
         bottom: 10%;
+        margin-top: -7%;
       }
       
       nav ul li {
@@ -310,11 +365,14 @@ img{
         font-size: 175%;
         text-align: center;
         color: #ED7458; 
+        margin-top: 5.5%;
     }
-    .post{
+    
+    .container > div{
         width: 80%;
         left: 10%;
     }
+
     img{
         position: absolute;
         width: 65%;
@@ -322,10 +380,7 @@ img{
         left: 17.5%;
         top: 18%;
     }
-    .post2{
-        width: 80%;
-        left: 10%;
-    }
+    
     .username-post{
         width: 80%;
         left: 10%;
@@ -363,4 +418,16 @@ img{
         bottom: 5%;
     }
    
+    .user-comm > a{
+        width: 150%;
+        left: -68%;
+    }
+
+    .username-post  > p{
+        margin-top: 3.5%;
+    }
+
+    .description > p{
+        margin-top: 6%;
+    }
 }

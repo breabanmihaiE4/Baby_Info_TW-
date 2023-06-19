@@ -1,0 +1,54 @@
+/* Resetare stilizare implicita */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stilizare corp pagina */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Stilizare formular */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 18%;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-left: 30%;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6%;
+  }
+  
+  /* Stilizare buton de retur */
+  .returnbtn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn-return {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-return:hover {
+    background-color: #45a049;
+  }
+  

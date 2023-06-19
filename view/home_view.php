@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="../css/home.css">
     <title>Home</title>
 </head>
 <body>
+
+    <?php
+        require '../controller/_check_auth.php';
+        require '../controller/_get_user_profile.php';
+    ?>
+
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="./images/user_logo.png" alt="User_Logo">
+                <img src=<?php echo "$pathPhotoProfile" ?> alt="User_Logo">
             </div>
             <div class="nav-username">
-                <h1>Username</h1>
+                <h1> <?php echo $userName; ?> </h1>
             </div>
             <div class="nav-menu">
                 <ul>
-                    <li><a class="here" href="home.html">Home</a></li>
-                    <li><a href="feed.html">Feed</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="profile.html">Profile</a></li>
+                    <li><a class="here" href="home_view.php">Home</a></li>
+                    <li><a href="feed_view.php">Feed</a></li>
+                    <li><a href="dashboard_view.php">Dashboard</a></li>
+                    <li><a href="profile_view.php">Profile</a></li>
                 </ul>
             </div>
         </div>

@@ -32,13 +32,6 @@ nav ul li a:hover{
     color: #FFFFFF;
     background: #C4B3A0;
 }
-nav img{
-    position: absolute;
-    width: 55%;
-    height: 15%;
-    top: 5%;
-    left: 23%;
-}
 .nav-menu{
     position: absolute;
     width: 100%;
@@ -58,7 +51,28 @@ nav img{
     font-size: 125%;
     color: #FFFFFF;
 }
-
+.nav-logo {
+    position: relative;
+    width: 170px; /* Ajustează dimensiunea containerului shape după nevoie */
+    height: 170px; /* Ajustează dimensiunea containerului shape după nevoie */
+    border-radius: 50%; /* Ajustează forma shape-ului (aici am folosit un cerc) */
+    overflow: hidden; /* Ascunde porțiunea din imagine care depășește forma shape-ului */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+  
+.nav-logo img {
+    max-width: 100%; /* Poza va umple întreaga formă, menținând proporțiile */
+    max-height: 100%;
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* profile page */
 .page{
@@ -118,35 +132,51 @@ nav img{
 .buton > button{
     border-radius: 20px;
     color: #fff;
-    margin-top: 18px;
+    margin-top: 170%;
     padding: 10px;
     background-color: #8E7C68;
-    font-size: 12px;
+    font-size: 65%;
     border: none;
     cursor: pointer;
     width: 100%;
+    margin-left: 2%;
 }
 .home{
     position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 20%;
-    top: 15%;
+    width: 55%;
+    height: 88%;
+    left: 31%;
+    top: 6%;
     background: #FFDC9F;
     border-radius: 100px;
 }
     .bain{
         text-align: center;
+        display: block;
+        margin-block-start: 4%;
+        margin-block-end: 7%;
+        margin-inline-start: 5%;
+        margin-inline-end: 1.5%;
     }
     .info{
         text-align: center;
+        display: block;
+        margin-block-start: 7%;
+        margin-block-end: 4%;
+        margin-inline-start: 4%;
+        margin-inline-end: 4%;
     }
     .scop{
         text-align: center;
+        display: block;
+        margin-block-start: 4%;
+        margin-block-end: 4%;
+        margin-inline-start: 4%;
+        margin-inline-end: 4%;
     }
 
-
 /* profile page */
+
 
 /* to do */
 @media screen and (max-width: 900px) {
@@ -177,6 +207,7 @@ nav img{
         margin: -2%;
         display: flex; 
         bottom: 10%;
+        margin-top: -3%;
       }
       
       nav ul li {
@@ -248,5 +279,17 @@ nav img{
     }
     .scop{
         text-align: center;
+    }
+
+    .buton > button{
+        margin-top: 95%;
+    }
+
+    .home{
+        position: absolute;
+        width: 55%;
+        height: 81%;
+        left: 25%;
+        top: 14%;
     }
 }

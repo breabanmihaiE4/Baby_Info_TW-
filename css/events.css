@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  .timeline-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-item p {
+    margin: 10px 0;
+  }
+  
+  .btn-edit,
+  .btn-delete,
+  .btn-add,
+  .btn-return {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .btn-return {
+    position: fixed;
+    bottom: 20px;
+    right: 150px;
+}
+  
+  .btn-edit:hover,
+  .btn-delete:hover,
+  .btn-add:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-edit:focus,
+  .btn-delete:focus,
+  .btn-add:focus {
+    outline: none;
+  }
+  
+  .btn-edit {
+    background-color: #2196f3;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+  }
+  
+  .btn-add {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .btn-add:hover {
+    background-color: #4caf50;
+  }
+  
+  .btn-add:focus {
+    outline: none;
+  }

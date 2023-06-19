@@ -42,6 +42,7 @@ nav ul li a:hover{
     color: black;
     background-color: rgba(0, 0, 0, 0.250);
 }
+
 .nav-username{
     position: absolute;
     width: 100%;
@@ -51,6 +52,7 @@ nav ul li a:hover{
     font-size: 125%;
     color: #FFFFFF;
 }
+
 .nav-logo {
     position: relative;
     width: 170px; /* Ajustează dimensiunea containerului shape după nevoie */
@@ -74,8 +76,7 @@ nav ul li a:hover{
     align-items: center;
 }
 
-
-/* feed page */
+/* babypage page */
 .page{
     position: absolute;
     width: 85%;
@@ -84,7 +85,7 @@ nav ul li a:hover{
     top: 0%;
     background: #DDC9BC;
 }
-.dashboardpage{
+.babypage{
     position: absolute;
     width: 22%;
     height: 8%;
@@ -95,103 +96,155 @@ nav ul li a:hover{
     box-shadow: 2px 3px 14px 4px rgba(76, 88, 109, 0.75);
     border-radius: 100px;
 }
-.dashboardpage > h2{
+.babypage > h2{
     position: absolute;
     width: 100%;
     height: 100%;
     font-size: 200%;
     text-align: center;
-    color: #ED7458;
-    margin-top: 3%;  
+    color: #ED7458; 
 }
-
-.add{
-    position: fixed;
-    width: 15%;
+.child{
+    position: absolute;
+    width: 80%;
+    height: 74%;
+    left: 10%;
+    top: 19%;
+    background: #FFDC9F;
+    border-radius: 50px;
+}
+.edit-table{
+    position: absolute;
+    width: 8%;
     height: 10%;
-    left: 85%;
-    top: 90%;
-    bottom: 0%;
-    transform: scale(1.2, 2.0);
+    left: 57%;
+    bottom: 40%;
+    text-align: center;
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.edit-photo{
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    left: 12%;
+    bottom: 40%;
+    text-align: center;
+}
+.food{
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    left: 2%;
+    bottom: 20%;
+    text-align: center;
+}
+.sleep{
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    left: 22%;
+    bottom: 20%;
+    text-align: center;
+}
+.events{
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    left: 42%;
+    bottom: 20%;
+    text-align: center;
+}
+.medical{
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    left: 62%;
+    bottom: 20%;
+    text-align: center;
+}
+.media{
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    left: 82%;
+    bottom: 20%;
+    text-align: center;
+}
+.relatii{
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    left: 42%;
+    bottom: 5%;
+    text-align: center;
+}
+.childprofilepic {
+    position: absolute;
+    width: 25%; /* Ajustează dimensiunea imaginii la nevoie */
+    height: 40%; /* Ajustează dimensiunea imaginii la nevoie */
+    left: 5%;
+    top: 5%;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+.edit-photo button,
+.edit-table button {
+  padding: 5px;
+  width: 150%;
+}
+.edit-photo button > p,
+.edit-table button > p{
+  font-size: 100%;
+}
 button{
-    border-radius: 20px;
+    border-radius: 30px;
     color: #fff;
     background-color: #8E7C68;
     font-size: 12px;
     border: none;
     cursor: pointer;
-    margin-top: 2%;
-    width: 40%;
-    margin-left: 30%;
+    margin-top: -10%;
+    width: 200%;
+    padding: 10px;
 }
 button > p{
     position: relative;
-    font-size: 100%;
+    font-size: 110%;
     text-align: center;
     font-weight: bold;
     color: white;
     background-color: #8E7C68;
 }
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container > div{
-    width: 60%;
-    height: 600px;
-    margin-left: 20%;
-    margin-top: 10%;
-    margin-bottom: -5%;
+.tabel{
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    left: 37%;
+    top: 18%;
     background: #FFDC9F;
     border-radius: 50px;
-}
-.nume{
-    width: 100%;
-    height: 20%;
-    text-align: center;
-    font-size: 200%;
-    color: #ED7458;
-    margin-top: 2%;
-}
-h2{
-    margin-bottom: 0;
-}
-.imagine {
-    position: relative;
-    width: 70%; /* Ajustează dimensiunea containerului shape după nevoie */
-    height: 50%; /* Ajustează dimensiunea containerului shape după nevoie */
-    border-radius: 20%; /* Ajustează forma shape-ului (aici am folosit un cerc) */
-    overflow: hidden; /* Ascunde porțiunea din imagine care depășește forma shape-ului */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 2%;
-    margin-left: 15%;
-}
-  
-.imagine img {
-    max-width: 100%; /* Poza va umple întreaga formă, menținând proporțiile */
-    max-height: 100%;
-}
-  
-.child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
 table{
-    width: 90%;
-    height: 80%;
-    margin-left: 5%;
+    width: 110%;
+    height: 100%;
+    margin-left: 10%;
     border-collapse: collapse;
     border: 1px solid black;
     border-radius: 50px;
-    margin-top: 2%;
 }
 .heads{
     position: relative;
@@ -213,53 +266,7 @@ tr:nth-child(even) {
     background-color: black;
 }
 
-/* add child - modal css */
-dialog[data-modal] {
-    width: 300px;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  dialog[data-modal] form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  dialog[data-modal] input[type="text"],
-  dialog[data-modal] input[type="file"] {
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  dialog[data-modal] button[type="submit"] {
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #4caf50;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  dialog[data-modal] button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  dialog[data-modal] button[type="submit"][formmethod="dialog"] {
-    background-color: #ccc;
-    color: #000;
-    margin-right: 10px;
-  }
-  
-  
 
-/* feed page */
-
-
-/* to do */
 @media screen and (max-width: 900px) {
     body {
         background-color: #DDC9BC;
@@ -288,7 +295,6 @@ dialog[data-modal] {
         margin: -2%;
         display: flex; 
         bottom: 10%;
-        margin-top: -4%;
       }
       
       nav ul li {
@@ -327,7 +333,7 @@ dialog[data-modal] {
         left: 0%;
         top: 6%;
     }
-    .dashboardpage{
+    .babypage{
         position: absolute;
         width: 60%;
         height: 8%;
@@ -337,7 +343,7 @@ dialog[data-modal] {
         box-shadow: 2px 3px 14px 4px rgb(76 88 109 / 75%);
         border-radius: 100px;
     }
-    .dashboardpage > h2{
+    .babypage > h2{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -345,7 +351,7 @@ dialog[data-modal] {
         text-align: center;
         color: #ED7458;
     }
-    .copil1{
+    .child{
         position: absolute;
         width: 80%;
         height: 40%;
@@ -353,21 +359,6 @@ dialog[data-modal] {
         top: 25%;
         background: #FFDC9F;
         border-radius: 50px;
-    }
-    .child-name{
-        position: absolute;
-        width: 40%;
-        height: 20%;
-        left: 30%;
-    }
-    .child-name > p{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        font-size: 150%;
-        text-align: center;
-        font-weight: bold;
-        color: #ED7458;
     }
     .tabel{
         position: absolute;
@@ -414,19 +405,11 @@ dialog[data-modal] {
         left: 20%;
         bottom: 10%;
     }
-    .delete{
-        position: absolute;
-        width: 30%;
-        height: 10%;
-        left: 50%;
-        bottom: 10%;
-        text-align: center;
-    }
     .childprofilepic{
        display: none;
     }
     .button{
-        border-radius: 20px;
+        border-radius: 30px;
         color: #fff;
         margin-top: 18px;
         padding: 10px;
@@ -434,16 +417,70 @@ dialog[data-modal] {
         border: none;
         cursor: pointer;
     }
-    .add {
-        position: relative;
-        width: 30%;
-        height: 15%;
-        left: 35%;
-        top: 13%;
-        bottom: 0%;
-        text-align: center;
+    button{
+        width: 100%;
+        background-color: #8E7C68;
     }
-    .edit {
+    .tabel{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        left: 0%;
+        top: 30%;
+        background: #FFDC9F;
+        border-radius: 50px;
+    }
+    table{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+        border-collapse: collapse;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+    .heads{
+        position: relative;
+        background: #ED7458;
+    }
+    .inserts{
+        position: relative;
+        color: #ED7458;
+    }
+    th, td {
+        border: 2px solid black;
+        padding: 8px;
+    }
+    th {
+        background-color: black;
+        font-weight: bold;
+    }
+    tr:nth-child(even) {
+        background-color: black;
+    }
+    .childprofilepic{
+        display: none;
+     }
+     .button{
+         border-radius: 20px;
+         color: #fff;
+         margin-top: 18px;
+         padding: 10px;
+         font-size: 12px;
+         border: none;
+         cursor: pointer;
+     }
+     .add {
+         position: relative;
+         width: 30%;
+         height: 15%;
+         left: 35%;
+         top: 13%;
+         bottom: 0%;
+         text-align: center;
+     }
+     .edit {
         position: absolute;
         width: 30%;
         height: 10%;
@@ -451,21 +488,6 @@ dialog[data-modal] {
         bottom: 16%;
         text-align: center;
     }
-    .delete {
-        position: absolute;
-        width: 30%;
-        height: 10%;
-        left: 55%;
-        bottom: 16%;
-        text-align: center;
-    }
-    button{
-        width: 100%;
-        background-color: #8E7C68;
-        margin-top: -10%;
-    }
-    
-
 }
 
     

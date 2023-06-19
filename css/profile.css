@@ -32,13 +32,6 @@ nav ul li a:hover{
     color: #FFFFFF;
     background: #C4B3A0;
 }
-nav img{
-    position: absolute;
-    width: 55%;
-    height: 15%;
-    top: 5%;
-    left: 23%;
-}
 .nav-menu{
     position: absolute;
     width: 100%;
@@ -58,7 +51,28 @@ nav img{
     font-size: 125%;
     color: #FFFFFF;
 }
-
+.nav-logo {
+    position: relative;
+    width: 170px; /* Ajustează dimensiunea containerului shape după nevoie */
+    height: 170px; /* Ajustează dimensiunea containerului shape după nevoie */
+    border-radius: 50%; /* Ajustează forma shape-ului (aici am folosit un cerc) */
+    overflow: hidden; /* Ascunde porțiunea din imagine care depășește forma shape-ului */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+  
+.nav-logo img {
+    max-width: 100%; /* Poza va umple întreaga formă, menținând proporțiile */
+    max-height: 100%;
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* profile page */
 .page{
@@ -87,6 +101,7 @@ nav img{
     font-size: 200%;
     text-align: center;
     color: #ED7458; 
+    margin-top: 3.5%; 
 }
 .post{
     position: absolute;
@@ -103,26 +118,8 @@ nav img{
     position: relative;
     width: 50%;
     height: 8%;
-    left: 45%;
-    top: 5%; 
-    background: #FFFFFF;
-    border-radius: 20px;
-}
-.namebox > p{
-    position: absolute;
-    width: 100%;
-    left: 25%;
-    font-size: 130%;
-    line-height: 10%;
-    color: #000000;
-}
-.namebox > h2{
-    position: absolute;
-    width: 100%;
-    left: -60%;
-    font-size: 130%;
-    line-height: 45%;
-    color: #000000;
+    left: 15%;
+    top: 15%; 
 }
 
 .emailbox{
@@ -130,78 +127,34 @@ nav img{
     position: relative;
     width: 50%;
     height: 8%;
-    left: 45%;
-    top: 9%; 
-    background: #FFFFFF;
-    border-radius: 20px;
+    left: 15%;
+    top: 20%; 
 }
-.emailbox > p{
-    position: absolute;
-    width: 100%;
-    left: 5%;
-    font-size: 130%;
-    line-height: 10%;
-    color: #000000;
-}
-.emailbox > h2{
-    position: absolute;
-    width: 100%;
-    left: -60%;
-    font-size: 130%;
-    line-height: 45%;
-    color: #000000;
-}
+
 .phonebox{
     box-sizing: border-box;
     position: relative;
     width: 50%;
     height: 8%;
-    left: 45%;
-    top: 13%; 
-    background: #FFFFFF;
-    border-radius: 20px;
+    left: 15%;
+    top: 25%; 
 }
-.phonebox > p{
-    position: absolute;
-    width: 100%;
-    left: 29%;
-    font-size: 130%;
-    line-height: 10%;
-    color: #000000;
-}
-.phonebox > h2{
-    position: absolute;
-    width: 100%;
-    left: -60%;
-    font-size: 130%;
-    line-height: 45%;
-    color: #000000;
-}
+
 .descriptionbox{
     box-sizing: border-box;
     position: relative;
     width: 50%;
     height: 45%;
-    left: 45%;
-    top: 17%; 
-    background: #FFFFFF;
-    border-radius: 20px;
+    left: 15%;
+    top: 30%; 
 }
-.descriptionbox > p{
-    position: absolute;
-    width: 100%;
-    left: 24%;
-    font-size: 130%;
-    line-height: 10%;
-    color: #000000;
-}
-.descriptionbox > h2{
-    position: absolute;
-    width: 100%;
-    left: -60%;
-    font-size: 130%;
-    line-height: 45%;
-    color: #000000;
+.edit-photo{
+    position: fixed;
+    width: 8%;
+    height: 10%;
+    left: 20%;
+    bottom: 0%;
+    text-align: center;
 }
 .edit{
     position: absolute;
@@ -220,7 +173,13 @@ nav img{
     text-align: center;
 }
 button{
+    border-radius: 20px;
+    color: #fff;
     background-color: #8E7C68;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: -5%;
     width: 100%;
 }
 button > p{
@@ -228,13 +187,33 @@ button > p{
     font-size: 100%;
     text-align: center;
     font-weight: bold;
-    color: #ED7458;
+    color: white;
     background-color: #8E7C68;
 }
 
+input.input-field{
+    height: 30px;
+    width: 140%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+textarea{
+    height: 60%;
+    width: 140%;
+    border-radius: 10px;
+}
+
+  .profile-image {
+    display: block;
+    margin: 0 auto;
+  }
+  
+
 /* profile page */
 
-/* to do */
+
+
 @media screen and (max-width: 900px) {
     body {
         background-color: #DDC9BC;
@@ -406,6 +385,7 @@ button > p{
         background: #FFFFFF;
         border-radius: 20px;
     }
+
 
 }
 
