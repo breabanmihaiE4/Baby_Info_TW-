@@ -7,6 +7,8 @@
 <body>
 <?php
 require '../model/_dbcon.php';
+require '../controller/_check_auth.php';
+require '../controller/_get_user_profile.php';
 $child_id = $_GET['id'];
 $sql = "SELECT * FROM medical WHERE child_id = '$child_id' ORDER BY event_date DESC";
 $result = mysqli_query($connect, $sql);

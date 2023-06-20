@@ -10,6 +10,8 @@
 <body>
 
 <?php
+require '../controller/_check_auth.php';
+require '../controller/_get_user_profile.php';
 if (!isset($_COOKIE['cookieUserName'])) {
     header("Location: login.php");
 } else {

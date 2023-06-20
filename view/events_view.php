@@ -7,6 +7,8 @@
 <body>
 <?php
 require '../model/_dbcon.php';
+require '../controller/_check_auth.php';
+require '../controller/_get_user_profile.php';
 $child_id = $_GET['id'];
 $sql = "SELECT * FROM events WHERE child_id = '$child_id' ORDER BY event_date DESC";
 $result = mysqli_query($connect, $sql);
@@ -25,16 +27,15 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "Nu există evenimente de afișat.";
 }
-
 mysqli_close($connect);
 ?>
 
-    <button class="btn-add" onclick="addEvent()">Add Event</button>
-        <?php 
-            echo'<form action="./babypage_view.php?id='.$child_id.'" method="POST" class="button">' 
-         ?>
-        <button class="btn-return">Return</button>
-    </form>
+<button class="btn-add" onclick="addEvent()">Add Event</button>
+    <?php 
+        echo'<form action="./babypage_view.php?id='.$child_id.'" method="POST" class="button">' 
+        ?>
+    <button class="btn-return">Return</button>
+</form>
 
 
 <script>
@@ -59,7 +60,7 @@ mysqli_close($connect);
             };
             xhttp.open("GET", "../controller/delete_event.php?id=" + eventId, true);
             xhttp.send();
-        }
+        }   
     }
 
     function addEvent() {

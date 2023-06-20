@@ -10,6 +10,8 @@
 <body>
 
 <?php
+require '../controller/_check_auth.php';
+require '../controller/_get_user_profile.php';
 if (!isset($_COOKIE['cookieUserName'])) {
     header("Location: login_view.php");
 } else {
@@ -21,12 +23,12 @@ if (!isset($_COOKIE['cookieUserName'])) {
     $row = mysqli_fetch_array($result);
     $childName = $row['NumeCopil'];
 
-    $sql = "SELECT Id FROM somn WHERE idCopil='$childId'";
+    $sql = "SELECT Id FROM hrana WHERE idCopil='$childId'";
     $sqlres = mysqli_query($connect, $sql);
     $row = mysqli_fetch_assoc($sqlres);
     $IdStart = intval($row['Id']);
 
-    $sql = "SELECT * FROM somn WHERE id = '$IdStart'";
+    $sql = "SELECT * FROM hrana WHERE id = '$IdStart'";
     $result = mysqli_query($connect, $sql);
     $row = mysqli_fetch_assoc($result);
     $dimineataLuni = $row['Luni'];
@@ -38,7 +40,7 @@ if (!isset($_COOKIE['cookieUserName'])) {
     $dimineataDuminica = $row['Duminica'];
 
     $IdStart = $IdStart + 1;
-            $sql = "SELECT * FROM somn WHERE id = '$IdStart'";
+            $sql = "SELECT * FROM hrana WHERE id = '$IdStart'";
             $result = mysqli_query($connect, $sql);
             $row = mysqli_fetch_assoc($result);
             $somnOdihnaLuni1 = $row['Luni'];
@@ -50,7 +52,7 @@ if (!isset($_COOKIE['cookieUserName'])) {
             $somnOdihnaDuminica1 = $row['Duminica'];
 
             $IdStart = $IdStart + 1;
-            $sql = "SELECT * FROM somn WHERE id = '$IdStart'";
+            $sql = "SELECT * FROM hrana WHERE id = '$IdStart'";
             $result = mysqli_query($connect, $sql);
             $row = mysqli_fetch_assoc($result);
             $somnOdihnaLuni2 = $row['Luni'];
@@ -62,7 +64,7 @@ if (!isset($_COOKIE['cookieUserName'])) {
             $somnOdihnaDuminica2 = $row['Duminica'];
 
             $IdStart = $IdStart + 1;
-            $sql = "SELECT * FROM somn WHERE id = '$IdStart'";
+            $sql = "SELECT * FROM hrana WHERE id = '$IdStart'";
             $result = mysqli_query($connect, $sql);
             $row = mysqli_fetch_assoc($result);
             $searaLuni = $row['Luni'];
@@ -166,7 +168,7 @@ if (isset($_POST['Save'])) {
     $dimineataSambata = $_POST['DimineataSambata'];
     $dimineataDuminica = $_POST['DimineataDuminica'];
     
-    $sql = "UPDATE somn SET Luni='$dimineataLuni', Marti='$dimineataMarti', Miercuri='$dimineataMiercuri', Joi='$dimineataJoi', Vineri='$dimineataVineri', Sambata='$dimineataSambata', Duminica='$dimineataDuminica' WHERE id='$IdStart'";
+    $sql = "UPDATE hrana SET Luni='$dimineataLuni', Marti='$dimineataMarti', Miercuri='$dimineataMiercuri', Joi='$dimineataJoi', Vineri='$dimineataVineri', Sambata='$dimineataSambata', Duminica='$dimineataDuminica' WHERE id='$IdStart'";
         $result = mysqli_query($connect, $sql);
     
     
@@ -180,7 +182,7 @@ if (isset($_POST['Save'])) {
     $SomnOdihnaSambata1 = $_POST['somnOdihnaSambata1'];
     $SomnOdihnaDuminica1 = $_POST['somnOdihnaDuminica1'];
     
-    $sql = "UPDATE somn SET Luni='$SomnOdihnaLuni1', Marti='$SomnOdihnaMarti1', Miercuri='$SomnOdihnaMiercuri1', Joi='$SomnOdihnaJoi1', Vineri='$SomnOdihnaVineri1', Sambata='$SomnOdihnaSambata1', Duminica='$SomnOdihnaDuminica1' WHERE id='$IdStart'";
+    $sql = "UPDATE hrana SET Luni='$SomnOdihnaLuni1', Marti='$SomnOdihnaMarti1', Miercuri='$SomnOdihnaMiercuri1', Joi='$SomnOdihnaJoi1', Vineri='$SomnOdihnaVineri1', Sambata='$SomnOdihnaSambata1', Duminica='$SomnOdihnaDuminica1' WHERE id='$IdStart'";
         $result = mysqli_query($connect, $sql);
 
     $IdStart = $IdStart + 1;    
@@ -206,7 +208,7 @@ if (isset($_POST['Save'])) {
      $searaSambata = $_POST['SearaSambata'];
      $searaDuminica = $_POST['SearaDuminica'];
      
-    $sql = "UPDATE somn SET Luni='$searaLuni', Marti='$searaMarti', Miercuri='$searaMiercuri', Joi='$searaJoi', Vineri='$searaVineri', Sambata='$searaSambata', Duminica='$searaDuminica' WHERE id='$IdStart'";
+    $sql = "UPDATE hrana SET Luni='$searaLuni', Marti='$searaMarti', Miercuri='$searaMiercuri', Joi='$searaJoi', Vineri='$searaVineri', Sambata='$searaSambata', Duminica='$searaDuminica' WHERE id='$IdStart'";
          $result = mysqli_query($connect, $sql);
 }
 ?>

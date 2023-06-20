@@ -18,6 +18,7 @@
     </div>
 
     <?php
+        
         if(isset($_POST['register'])){
             require '../model/_dbcon.php';
             $username = $_POST['username'];

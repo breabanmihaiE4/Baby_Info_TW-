@@ -37,11 +37,11 @@
                 } else {
                     if($password==$cpassword){
                         $sql="insert into user_details(UserName, Email, Password) values('$username', '$email', '$password_hash')";
-                        $sql2="insert into user_profile(UserName, PathPhoto) values('$username','./images/user_logo.png')";
+                        $sql2="insert into user_profile(UserName, PathPhoto) values('$username','../images/user_logo.png')";
                         $sqlres=mysqli_query($connect, $sql);
                         $sqlres2=mysqli_query($connect, $sql2);
                         if($sqlres && $sqlres2){
-                            header("Location: login.php");
+                            header("Location: login_view.php");
                         } else {
                             echo "<script>alert('Error creating account!');</script>";
                         }
